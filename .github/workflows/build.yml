@@ -1,5 +1,5 @@
 ---
-name: Build Custom Image
+name: Build TacOS
 on:
   pull_request:
     branches:
@@ -15,7 +15,8 @@ on:
 
 env:
   IMAGE_NAME: "${{ github.event.repository.name }}"  # the name of the image produced by this build, matches repo names
-  IMAGE_DESC: "My Customized Universal Blue Image"
+  IMAGE_DESC: "A tastefully Tactical OS, seasoned with simplicity, and just the right toppings for the modern operator. 
+Immutable and always ready to deploy by design, ensuring your focus remains on the mission, not the OS from byte one."
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"  # do not edit
   ARTIFACTHUB_LOGO_URL: "https://avatars.githubusercontent.com/u/120078124?s=200&v=4"  # You should put your own image here so that you get a fancy profile image on https://artifacthub.io/!
 
